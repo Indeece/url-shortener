@@ -7,7 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.redis.core.RedisHash;
 
-@RedisHash("urls")
+@RedisHash(value = "urls", timeToLive = 2592000)
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
